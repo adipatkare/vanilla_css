@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@font-face {
-   font-family: ':lato';
-   src: url('/fonts/Lato/Lato-Regular.ttf');
- }
+
 
 * {
    margin: 0;
    font-family: Arial, Helvetica, sans-serif;
+   color: white;
+}
+
+h1{
+   font-family: 'DMSerif';
    
 }
 
@@ -19,8 +21,12 @@ flex-shrink: 0;
 .logo {
    background-image: url("/asserts/Logo.svg");
    background-size: cover;
-   height: 120px;
-   width: 100%;
+   display: flex;
+width: 6.25rem;
+height: 6.25rem;
+justify-content: center;
+align-items: center;
+flex-shrink: 0;
 }
 
 .panel-ops a {
@@ -35,4 +41,21 @@ flex-shrink: 0;
    width: 80%;
    font-size: 1rem;
    text-align: end;
+}
+
+.all-testimonials {
+   display: flex;
+   /* padding: 6.25rem; */
+height: 36.9375rem;
+flex-direction: column;
+justify-content: space-between;
+align-items: flex-start;
+
+}
+
+.testimonials-small {
+   width: 25.4375rem;
+height: 15.7915rem;
+border-radius: 1.16688rem;
+background: var(--gray-700, #3F3F46);
 }
